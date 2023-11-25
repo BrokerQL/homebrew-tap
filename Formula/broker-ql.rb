@@ -1,4 +1,4 @@
-class BrokerQL < Formula
+class BrokerQl < Formula
   include Language::Python::Virtualenv
   desc "Use SQL to instantly query your online brokers (IBKR and more). Open source CLI. No DB required."
   homepage "https://brokerql.github.io/"
