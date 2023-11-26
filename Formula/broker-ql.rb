@@ -7,6 +7,7 @@ class BrokerQl < Formula
   version "0.0.1"
 
   depends_on "python@3.9"
+  depends_on "rust"
 
   resource "cffi" do
     url "https://files.pythonhosted.org/packages/68/ce/95b0bae7968c65473e1298efb042e10cafc7bafc14d9e4f154008241c91d/cffi-1.16.0.tar.gz"
