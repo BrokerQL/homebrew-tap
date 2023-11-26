@@ -1,13 +1,17 @@
 class BrokerQl < Formula
   include Language::Python::Virtualenv
+
   desc "Use SQL to instantly query your online brokers (IBKR and more). Open source CLI. No DB required."
   homepage "https://brokerql.github.io/"
   url "https://files.pythonhosted.org/packages/c1/1b/fae83658fe4df2fa74e750c458aa71bdfe99fb44bc3a824cf17758eee389/BrokerQL-0.0.1.tar.gz"
   sha256 "d9485087974a154f64c1c4672218022f235b0829a6aae113f68e83fde7e427e4"
   version "0.0.1"
 
+  depends_on "numpy"
+  depends_on "rust" => :build
+  depends_on "ninja" => :build
+  depends_on "python-cryptography"
   depends_on "python@3.9"
-  depends_on "rust"
 
   resource "cffi" do
     url "https://files.pythonhosted.org/packages/68/ce/95b0bae7968c65473e1298efb042e10cafc7bafc14d9e4f154008241c91d/cffi-1.16.0.tar.gz"
